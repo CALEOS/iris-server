@@ -1,0 +1,27 @@
+{
+  "name": "chronicle-filter",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Filter for Chronicle",
+  "main": "index.js",
+  "jshintConfig": {
+    "esversion": 8,
+    "asi": true
+  },
+  "scripts": {
+    "test": "mocha --timeout 1000000"
+  },
+  "author": "Jesse Schulman",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^6.0.2",
+    "graceful-fs": "^4.2.1",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "ws": "^7.1.1"
+  },
+  "devDependencies": {
+    "@caleos/iris-client": "^0.1.1-2"
+  }
+}

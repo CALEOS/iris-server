@@ -1,0 +1,541 @@
+{
+  "block_num": "67",
+  "block_timestamp": "2018-12-08T19:37:55.000",
+  "trace": {
+    "id": "a5495f7a1d640bd254d1fe3bb659160c687684d00563a88e64d8d6a78f89db92",
+    "status": "executed",
+    "cpu_usage_us": "961",
+    "net_usage_words": "42",
+    "elapsed": "1311",
+    "net_usage": "336",
+    "scheduled": "false",
+    "action_traces": [
+      {
+        "action_ordinal": "1",
+        "creator_action_ordinal": "0",
+        "receipt": {
+          "receiver": "eosio",
+          "act_digest": "f57cf8e04f41975cff062c8bbe22d2be55eb679003497bbd75517dbab6b9200d",
+          "global_sequence": "1645",
+          "recv_sequence": "711",
+          "auth_sequence": [{ "account": "eosio", "sequence": "1638" }],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio",
+        "act": {
+          "account": "eosio",
+          "name": "newaccount",
+          "authorization": [{ "actor": "eosio", "permission": "active" }],
+          "data": {
+            "creator": "eosio",
+            "name": "eosnodeonebp",
+            "owner": {
+              "threshold": 1,
+              "keys": [
+                {
+                  "key": "PUB_K1_4vMYpGTJ56KLxf4wCTy6imBzCm9gXLuLqNHmtHpvXKXBnWdxUs",
+                  "weight": 1
+                }
+              ],
+              "accounts": [],
+              "waits": []
+            },
+            "active": {
+              "threshold": 1,
+              "keys": [
+                {
+                  "key": "PUB_K1_4vMYpGTJ56KLxf4wCTy6imBzCm9gXLuLqNHmtHpvXKXBnWdxUs",
+                  "weight": 1
+                }
+              ],
+              "accounts": [],
+              "waits": []
+            }
+          }
+        },
+        "context_free": "false",
+        "elapsed": "109",
+        "console": "",
+        "account_ram_deltas": [{ "account": "eosnodeonebp", "delta": "2996" }],
+        "except": "",
+        "error_code": null
+      },
+      {
+        "action_ordinal": "2",
+        "creator_action_ordinal": "0",
+        "receipt": {
+          "receiver": "eosio",
+          "act_digest": "23c04901d2a8a8b2ae2b025b6220ff0e1c457d41a7c97f99687e84844d00f4f2",
+          "global_sequence": "1646",
+          "recv_sequence": "712",
+          "auth_sequence": [{ "account": "eosio", "sequence": "1639" }],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio",
+        "act": {
+          "account": "eosio",
+          "name": "buyrambytes",
+          "authorization": [{ "actor": "eosio", "permission": "active" }],
+          "data": {
+            "payer": "eosio",
+            "receiver": "eosnodeonebp",
+            "bytes": 4096
+          }
+        },
+        "context_free": "false",
+        "elapsed": "393",
+        "console": "",
+        "account_ram_deltas": [],
+        "except": "",
+        "error_code": null
+      },
+      {
+        "action_ordinal": "3",
+        "creator_action_ordinal": "0",
+        "receipt": {
+          "receiver": "eosio",
+          "act_digest": "99a4e179733fb943efb3409b84febbea87f4b06e3f582810300dc892d8274c03",
+          "global_sequence": "1655",
+          "recv_sequence": "715",
+          "auth_sequence": [{ "account": "eosio", "sequence": "1648" }],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio",
+        "act": {
+          "account": "eosio",
+          "name": "delegatebw",
+          "authorization": [{ "actor": "eosio", "permission": "active" }],
+          "data": {
+            "from": "eosio",
+            "receiver": "eosnodeonebp",
+            "stake_net_quantity": "1.0000 TLOS",
+            "stake_cpu_quantity": "1.0000 TLOS",
+            "transfer": true
+          }
+        },
+        "context_free": "false",
+        "elapsed": "333",
+        "console": "",
+        "account_ram_deltas": [{ "account": "eosnodeonebp", "delta": "458" }],
+        "except": "",
+        "error_code": null
+      },
+      {
+        "action_ordinal": "4",
+        "creator_action_ordinal": "2",
+        "receipt": {
+          "receiver": "eosio.token",
+          "act_digest": "81c656d4444363426e5691fbd765e48f8e0428fabc01cb792495f274ec5dba3f",
+          "global_sequence": "1647",
+          "recv_sequence": "317",
+          "auth_sequence": [
+            { "account": "eosio", "sequence": "1640" },
+            { "account": "eosio.ram", "sequence": "413" }
+          ],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio.token",
+        "act": {
+          "account": "eosio.token",
+          "name": "transfer",
+          "authorization": [
+            { "actor": "eosio", "permission": "active" },
+            { "actor": "eosio.ram", "permission": "active" }
+          ],
+          "data": {
+            "from": "eosio",
+            "to": "eosio.ram",
+            "quantity": "0.1086 TLOS",
+            "memo": "buy ram"
+          }
+        },
+        "context_free": "false",
+        "elapsed": "121",
+        "console": "",
+        "account_ram_deltas": [],
+        "except": "",
+        "error_code": null
+      },
+      {
+        "action_ordinal": "5",
+        "creator_action_ordinal": "2",
+        "receipt": {
+          "receiver": "eosio.token",
+          "act_digest": "274072f337075256b04db85d57dc0442b5581a788f8f11708a3e65ca6719eed0",
+          "global_sequence": "1651",
+          "recv_sequence": "318",
+          "auth_sequence": [{ "account": "eosio", "sequence": "1644" }],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio.token",
+        "act": {
+          "account": "eosio.token",
+          "name": "transfer",
+          "authorization": [{ "actor": "eosio", "permission": "active" }],
+          "data": {
+            "from": "eosio",
+            "to": "eosio.ramfee",
+            "quantity": "0.0006 TLOS",
+            "memo": "ram fee"
+          }
+        },
+        "context_free": "false",
+        "elapsed": "115",
+        "console": "",
+        "account_ram_deltas": [],
+        "except": "",
+        "error_code": null
+      },
+      {
+        "action_ordinal": "6",
+        "creator_action_ordinal": "4",
+        "receipt": {
+          "receiver": "eosio",
+          "act_digest": "81c656d4444363426e5691fbd765e48f8e0428fabc01cb792495f274ec5dba3f",
+          "global_sequence": "1648",
+          "recv_sequence": "713",
+          "auth_sequence": [
+            { "account": "eosio", "sequence": "1641" },
+            { "account": "eosio.ram", "sequence": "414" }
+          ],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio",
+        "act": {
+          "account": "eosio.token",
+          "name": "transfer",
+          "authorization": [
+            { "actor": "eosio", "permission": "active" },
+            { "actor": "eosio.ram", "permission": "active" }
+          ],
+          "data": {
+            "from": "eosio",
+            "to": "eosio.ram",
+            "quantity": "0.1086 TLOS",
+            "memo": "buy ram"
+          }
+        },
+        "context_free": "false",
+        "elapsed": "16",
+        "console": "",
+        "account_ram_deltas": [],
+        "except": "",
+        "error_code": null
+      },
+      {
+        "action_ordinal": "7",
+        "creator_action_ordinal": "4",
+        "receipt": {
+          "receiver": "eosio.ram",
+          "act_digest": "81c656d4444363426e5691fbd765e48f8e0428fabc01cb792495f274ec5dba3f",
+          "global_sequence": "1649",
+          "recv_sequence": "104",
+          "auth_sequence": [
+            { "account": "eosio", "sequence": "1642" },
+            { "account": "eosio.ram", "sequence": "415" }
+          ],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio.ram",
+        "act": {
+          "account": "eosio.token",
+          "name": "transfer",
+          "authorization": [
+            { "actor": "eosio", "permission": "active" },
+            { "actor": "eosio.ram", "permission": "active" }
+          ],
+          "data": {
+            "from": "eosio",
+            "to": "eosio.ram",
+            "quantity": "0.1086 TLOS",
+            "memo": "buy ram"
+          }
+        },
+        "context_free": "false",
+        "elapsed": "3",
+        "console": "",
+        "account_ram_deltas": [],
+        "except": "",
+        "error_code": null
+      },
+      {
+        "action_ordinal": "8",
+        "creator_action_ordinal": "4",
+        "receipt": {
+          "receiver": "eosio.trail",
+          "act_digest": "81c656d4444363426e5691fbd765e48f8e0428fabc01cb792495f274ec5dba3f",
+          "global_sequence": "1650",
+          "recv_sequence": "310",
+          "auth_sequence": [
+            { "account": "eosio", "sequence": "1643" },
+            { "account": "eosio.ram", "sequence": "416" }
+          ],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio.trail",
+        "act": {
+          "account": "eosio.token",
+          "name": "transfer",
+          "authorization": [
+            { "actor": "eosio", "permission": "active" },
+            { "actor": "eosio.ram", "permission": "active" }
+          ],
+          "data": {
+            "from": "eosio",
+            "to": "eosio.ram",
+            "quantity": "0.1086 TLOS",
+            "memo": "buy ram"
+          }
+        },
+        "context_free": "false",
+        "elapsed": "4",
+        "console": "",
+        "account_ram_deltas": [],
+        "except": "",
+        "error_code": null
+      },
+      {
+        "action_ordinal": "9",
+        "creator_action_ordinal": "5",
+        "receipt": {
+          "receiver": "eosio",
+          "act_digest": "274072f337075256b04db85d57dc0442b5581a788f8f11708a3e65ca6719eed0",
+          "global_sequence": "1652",
+          "recv_sequence": "714",
+          "auth_sequence": [{ "account": "eosio", "sequence": "1645" }],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio",
+        "act": {
+          "account": "eosio.token",
+          "name": "transfer",
+          "authorization": [{ "actor": "eosio", "permission": "active" }],
+          "data": {
+            "from": "eosio",
+            "to": "eosio.ramfee",
+            "quantity": "0.0006 TLOS",
+            "memo": "ram fee"
+          }
+        },
+        "context_free": "false",
+        "elapsed": "14",
+        "console": "",
+        "account_ram_deltas": [],
+        "except": "",
+        "error_code": null
+      },
+      {
+        "action_ordinal": "10",
+        "creator_action_ordinal": "5",
+        "receipt": {
+          "receiver": "eosio.ramfee",
+          "act_digest": "274072f337075256b04db85d57dc0442b5581a788f8f11708a3e65ca6719eed0",
+          "global_sequence": "1653",
+          "recv_sequence": "104",
+          "auth_sequence": [{ "account": "eosio", "sequence": "1646" }],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio.ramfee",
+        "act": {
+          "account": "eosio.token",
+          "name": "transfer",
+          "authorization": [{ "actor": "eosio", "permission": "active" }],
+          "data": {
+            "from": "eosio",
+            "to": "eosio.ramfee",
+            "quantity": "0.0006 TLOS",
+            "memo": "ram fee"
+          }
+        },
+        "context_free": "false",
+        "elapsed": "3",
+        "console": "",
+        "account_ram_deltas": [],
+        "except": "",
+        "error_code": null
+      },
+      {
+        "action_ordinal": "11",
+        "creator_action_ordinal": "5",
+        "receipt": {
+          "receiver": "eosio.trail",
+          "act_digest": "274072f337075256b04db85d57dc0442b5581a788f8f11708a3e65ca6719eed0",
+          "global_sequence": "1654",
+          "recv_sequence": "311",
+          "auth_sequence": [{ "account": "eosio", "sequence": "1647" }],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio.trail",
+        "act": {
+          "account": "eosio.token",
+          "name": "transfer",
+          "authorization": [{ "actor": "eosio", "permission": "active" }],
+          "data": {
+            "from": "eosio",
+            "to": "eosio.ramfee",
+            "quantity": "0.0006 TLOS",
+            "memo": "ram fee"
+          }
+        },
+        "context_free": "false",
+        "elapsed": "3",
+        "console": "",
+        "account_ram_deltas": [],
+        "except": "",
+        "error_code": null
+      },
+      {
+        "action_ordinal": "12",
+        "creator_action_ordinal": "3",
+        "receipt": {
+          "receiver": "eosio.token",
+          "act_digest": "415ae142d1243fa80b62df1925474d384143209688a4809e6f32107564edc144",
+          "global_sequence": "1656",
+          "recv_sequence": "319",
+          "auth_sequence": [{ "account": "eosio", "sequence": "1649" }],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio.token",
+        "act": {
+          "account": "eosio.token",
+          "name": "transfer",
+          "authorization": [{ "actor": "eosio", "permission": "active" }],
+          "data": {
+            "from": "eosio",
+            "to": "eosio.stake",
+            "quantity": "2.0000 TLOS",
+            "memo": "stake bandwidth"
+          }
+        },
+        "context_free": "false",
+        "elapsed": "119",
+        "console": "",
+        "account_ram_deltas": [],
+        "except": "",
+        "error_code": null
+      },
+      {
+        "action_ordinal": "13",
+        "creator_action_ordinal": "12",
+        "receipt": {
+          "receiver": "eosio",
+          "act_digest": "415ae142d1243fa80b62df1925474d384143209688a4809e6f32107564edc144",
+          "global_sequence": "1657",
+          "recv_sequence": "716",
+          "auth_sequence": [{ "account": "eosio", "sequence": "1650" }],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio",
+        "act": {
+          "account": "eosio.token",
+          "name": "transfer",
+          "authorization": [{ "actor": "eosio", "permission": "active" }],
+          "data": {
+            "from": "eosio",
+            "to": "eosio.stake",
+            "quantity": "2.0000 TLOS",
+            "memo": "stake bandwidth"
+          }
+        },
+        "context_free": "false",
+        "elapsed": "15",
+        "console": "",
+        "account_ram_deltas": [],
+        "except": "",
+        "error_code": null
+      },
+      {
+        "action_ordinal": "14",
+        "creator_action_ordinal": "12",
+        "receipt": {
+          "receiver": "eosio.stake",
+          "act_digest": "415ae142d1243fa80b62df1925474d384143209688a4809e6f32107564edc144",
+          "global_sequence": "1658",
+          "recv_sequence": "104",
+          "auth_sequence": [{ "account": "eosio", "sequence": "1651" }],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio.stake",
+        "act": {
+          "account": "eosio.token",
+          "name": "transfer",
+          "authorization": [{ "actor": "eosio", "permission": "active" }],
+          "data": {
+            "from": "eosio",
+            "to": "eosio.stake",
+            "quantity": "2.0000 TLOS",
+            "memo": "stake bandwidth"
+          }
+        },
+        "context_free": "false",
+        "elapsed": "3",
+        "console": "",
+        "account_ram_deltas": [],
+        "except": "",
+        "error_code": null
+      },
+      {
+        "action_ordinal": "15",
+        "creator_action_ordinal": "12",
+        "receipt": {
+          "receiver": "eosio.trail",
+          "act_digest": "415ae142d1243fa80b62df1925474d384143209688a4809e6f32107564edc144",
+          "global_sequence": "1659",
+          "recv_sequence": "312",
+          "auth_sequence": [{ "account": "eosio", "sequence": "1652" }],
+          "code_sequence": "1",
+          "abi_sequence": "1"
+        },
+        "receiver": "eosio.trail",
+        "act": {
+          "account": "eosio.token",
+          "name": "transfer",
+          "authorization": [{ "actor": "eosio", "permission": "active" }],
+          "data": {
+            "from": "eosio",
+            "to": "eosio.stake",
+            "quantity": "2.0000 TLOS",
+            "memo": "stake bandwidth"
+          }
+        },
+        "context_free": "false",
+        "elapsed": "2",
+        "console": "",
+        "account_ram_deltas": [],
+        "except": "",
+        "error_code": null
+      }
+    ],
+    "account_ram_delta": null,
+    "except": "",
+    "error_code": null,
+    "failed_dtrx_trace": [],
+    "partial": {
+      "expiration": "2018-12-08T19:38:23.000",
+      "ref_block_num": "63",
+      "ref_block_prefix": "1072539375",
+      "max_net_usage_words": "0",
+      "max_cpu_usage_ms": "0",
+      "delay_sec": "0",
+      "transaction_extensions": [],
+      "signatures": [
+        "SIG_K1_JyuhQayht6gy9wNWbr9gJ2Etv26r8t9tjWuwUQpLX7aXK3xfFu9S3utRVHsj6g5UUfhWVEujcDd4ifGw87W57e1MNoY1WX"
+      ],
+      "context_free_data": []
+    }
+  }
+}
