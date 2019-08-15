@@ -28,6 +28,8 @@ DOCKER NOTE: `host.docker.internal` is not supported for linux. Set `exp-ws-host
 
 ### IrisServer
 
+First install the node dependencies, in the root of this repo run `npm install`
+
 There are many ways to run IrisServer, a future goal is to use `pm2` to manage both chronicle and iris-server since chronicle will shutdown if the iris port becomes unavailable.
 
 For now, the easiest way to run it is via nohup, change `LOG_FILE` to suit your needs:
