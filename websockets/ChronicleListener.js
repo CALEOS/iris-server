@@ -97,19 +97,27 @@ class ChronicleListener {
             }
 
             if (_this.lastBlock - _this.lastAck >= _this.ackInterval)
-                _this._ack(ws)
+                _this._ack()
 
         }.bind(this))
     }
 
-    _ack(websocket) {
+    _ack() {
         console.log(`Acknowledging ${this.lastBlock}`)
         this.lastAck = this.lastBlock
         this.chronicleConnection.send(this.lastBlock)
     }
 
     _fork(msgSubstringed) {
-        //console.log(`FORK:\n\n${JSON.stringify(msgObj, null, 4)}\n\n`)
+        let msgObj = JSON.parse(msgSubstringed)
+        let block_num = msgObj.block_num
+        this.lastBlock = block_num - 1
+        this._ack()
+
+        if (!this.messageRouter)
+            return
+
+        this.messageRouter.handleMessage(new Message(Channels.FORK, "fork", msgObj))
     }
 
     _block(msgSubstringed) {
