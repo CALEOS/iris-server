@@ -129,7 +129,7 @@ class ChronicleListener {
             return
 
         let msgObj = JSON.parse(msgSubstringed)
-        if (!msgObj.trace.status == 'executed')
+        if (msgObj.trace.status != 'executed')
             return
 
         let block_num = msgObj.block_num
