@@ -41,7 +41,7 @@ class MessageRouter {
     }
 
     subscribe(subscription) {
-        if (!subscription instanceof MessageSubscription)
+        if (!(subscription instanceof MessageSubscription))
             return
 
         let topic = subscription.getTopic()
@@ -60,7 +60,7 @@ class MessageRouter {
     }
 
     unsubscribe(subscription) {
-        if (!subscription instanceof MessageSubscription)
+        if (!(subscription instanceof MessageSubscription))
             return
 
         let topic = subscription.getTopic()

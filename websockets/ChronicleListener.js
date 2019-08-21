@@ -109,6 +109,7 @@ class ChronicleListener {
     }
 
     _fork(msgSubstringed) {
+        console.log("Received fork event: " + msgSubstringed)
         let msgObj = JSON.parse(msgSubstringed)
         let block_num = msgObj.block_num
         this.lastBlock = block_num - 1
