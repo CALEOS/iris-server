@@ -19,7 +19,7 @@
     "graceful-fs": "^4.2.1",
     "mocha": "^6.2.0",
     "nyc": "^14.1.1",
-    "ws": "^7.1.1"
+    "ws": "^7.4.6"
   },
   "devDependencies": {
     "@caleos/iris-client": "^0.1.1-2"
